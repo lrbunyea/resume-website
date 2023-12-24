@@ -11,24 +11,45 @@ html {
 }
 
 body {
-	background-color: var(--charcoal);
+	background-color: var(--timberwolf);
+	font-family:helvetica;
 	margin: 0px;
 	height: 100%;
 }
 
+table {
+	width: 100%;
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
 .side {
 	flex: 30%;
-	background-color: var(--timberwolf);
+	background-color: var(--charcoal);
+	outline: 3px solid var(--cadetgray);
 }
 
 .side h1 {
-	font-size: 40px;
-	color: var(charcoal);
-	text-align:center;
+	font-size: 50px;
+	color: var(--cadetgray);
+	text-align:left;
 }
 .side h2 {
+	font-size: 30px;
+	color: var(--timberwolf);
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.side h3 {
 	font-size: 20px;
-	color: var(charcoal);
+	color: var(--oldgold);
+	padding: 5%;
+}
+
+.side p {
+	color: var(--cadetgray);
+	text-align:left;
 }
 
 .main {
@@ -37,9 +58,9 @@ body {
 
 .main h1 {
 	font-size: 20px;
-	color: var(--oldgold);
+	color: var(--slategray);
 	text-align: left;
-	padding-left: 20px;
+	padding-left: 10%;
 }
 
 .container {
@@ -48,21 +69,32 @@ body {
 	height: 100%;
 }
 
-.center {
-  margin: auto;
-  width: 50%;
-  position: 50%;
-  padding: 10px;
+.navigation {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .profile-picture {
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
+	border: 5px solid var(--oldgold);
+	margin: 5%;
+}
+
+.nav-button {
+	flex: 50%;
+}
+
+.nav-button h1 {
+	font-size: 30px;
+	color: var(--charcoal);
+	text-align: center;
 }
 
 .half {
 	flex: 50%;
+	margin:auto;
 }
 
 .profile-pic-container {
